@@ -1,0 +1,250 @@
+.footer {
+    background: var(--footer-bg);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 2.5rem 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.copyright {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 2rem;
+}
+
+.footer-title {
+    color         : #fff;
+    font-weight   : 600;
+    margin-bottom : 1.2rem;
+    position      : relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-title::after {
+    content   : '';
+    position  : absolute;
+    bottom    : 0;
+    left      : 0;
+    width     : 50px;
+    height    : 2px;
+    background: var(--primary-color);
+}
+
+.footer-links a {
+    color          : rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition     : all 0.3s;
+    display        : block;
+    margin-bottom  : 0.8rem;
+}
+
+.footer-links a:hover {
+    color       : #fff;
+    padding-left: 5px;
+}
+
+.social-links a {
+    display        : inline-flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 40px;
+    height         : 40px;
+    background     : rgba(255, 255, 255, 0.1);
+    color          : #fff;
+    border-radius  : 50%;
+    margin-right   : 0.8rem;
+    transition     : all 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    transform : translateY(-3px);
+}
+
+.developer-badge {
+    background   : linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color        : white;
+    padding      : 0.3rem 1rem;
+    border-radius: 20px;
+    font-size    : 0.9rem;
+    display      : inline-block;
+    margin-top   : 1rem;
+}
+
+.kanban-container {
+    display       : flex;
+    overflow-x    : auto;
+    gap           : 1.5rem;
+    padding-bottom: 1.5rem;
+    min-height    : 70vh;
+}
+
+.kanban-column {
+    flex          : 0 0 330px;
+    background    : rgba(40, 40, 60, 0.8);
+    border-radius : 0.8rem;
+    border        : 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow    : 0 10px 20px rgba(0, 0, 0, 0.3);
+    display       : flex;
+    flex-direction: column;
+}
+
+.kanban-column-header {
+    padding        : 1.2rem 1.5rem;
+    border-bottom  : 1px solid rgba(255, 255, 255, 0.1);
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    cursor         : grab;
+    user-select    : none;
+}
+
+.kanban-column-header.dragging {
+    opacity  : 0.7;
+    transform: rotate(2deg);
+}
+
+.kanban-column-title {
+    font-weight: 600;
+    font-size  : 1.2rem;
+    margin     : 0;
+    color      : #fff;
+}
+
+.kanban-column-body {
+    padding       : 1.2rem;
+    min-height    : 150px;
+    flex-grow     : 1;
+    display       : flex;
+    flex-direction: column;
+    gap           : 1rem;
+}
+
+.kanban-task {
+    background   : rgba(50, 50, 70, 0.9);
+    background   : rgba(255, 255, 255, 0.65);
+    border-radius: 0.6rem;
+    padding      : 1.2rem;
+    cursor       : grab;
+    border-left  : 10px solid var(--task-color);
+    box-shadow   : 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition   : all 0.3s ease;
+}
+
+.kanban-task:hover {
+    transform : translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.kanban-task-header {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : flex-start;
+    gap            : 0.5rem;
+    margin-bottom  : 0.8rem;
+}
+
+.kanban-task-title {
+    font-weight: 600;
+    margin     : 0;
+    font-size  : 1.1rem;
+    color: #000;
+}
+
+.kanban-task-actions {
+    display: flex;
+    gap    : 0.3rem;
+}
+
+.kanban-task-action {
+    background     : rgba(255, 255, 255, 0.5);
+    border         : none;
+    width          : 28px;
+    height         : 28px;
+    border-radius  : 50%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    color          : rgba(0, 0, 0, 0.6);
+    transition     : all 0.2s;
+}
+
+.kanban-task-action:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color     : #fff;
+    transform : scale(1.1);
+}
+
+.kanban-task-description {
+    font-size    : 0.95rem;
+    color        : rgb(0, 0, 0);
+    margin-bottom: 0.8rem;
+}
+
+.kanban-task-footer {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    font-size      : 0.85rem;
+    color          : rgba(0, 0, 0, 0.8);
+}
+
+.add-task-btn {
+    background   : rgba(0, 0, 0, 0.05);
+    border       : 1.5px dashed rgba(255, 255, 255, 0.8);
+    color        : rgba(255, 255, 255, 0.7);
+    padding      : 1rem;
+    border-radius: 0.5rem;
+    text-align   : center;
+    cursor       : pointer;
+    transition   : all 0.2s;
+    font-weight  : 500;
+}
+
+.add-task-btn:hover {
+    background  : rgba(255, 255, 255, 0.1);
+    color       : rgba(255, 255, 255, 0.8);
+    border-style: solid;
+}
+
+/* Cores das tarefas baseadas na prioridade */
+.task-priority-high {
+    --task-color: #ff6b6b;
+}
+
+.task-priority-medium {
+    --task-color: #feca57;
+}
+
+.task-priority-low {
+    --task-color: #1dd1a1;
+}
+
+.task-priority-none {
+    --task-color: #576574;
+}
+
+/* Cores das colunas */
+.column-color-0 {
+    background: linear-gradient(135deg, #ffffff);
+}
+
+.column-color-1 {
+    background: linear-gradient(135deg, #0d6efd);
+}
+
+.column-color-2 {
+    background: linear-gradient(135deg, #dc3545);
+}
+
+.column-color-3 {
+    background: linear-gradient(135deg, #ffc107);
+}
+
+.column-color-4 {
+    background: linear-gradient(135deg, #198754);
+}
