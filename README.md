@@ -20,7 +20,6 @@ Um sistema completo de quadro Kanban estilo Trello, desenvolvido com Laravel, Bo
 - **Frontend**: Bootstrap 5, jQuery, Font Awesome
 - **Bibliotecas**: SweetAlert2, SortableJS
 - **Banco de Dados**: PostgreSQL/MySQL
-- **Deploy**: (adicione seu método de deploy)
 
 ## 🚀 Como Executar Localmente
 
@@ -46,7 +45,7 @@ Um sistema completo de quadro Kanban estilo Trello, desenvolvido com Laravel, Bo
 - php artisan key:generate
 
 4. Configure o banco de dados no .env
-- DB_CONNECTION=pgsql
+- DB_CONNECTION=pgsql / mysql
 - DB_HOST=127.0.0.1
 - DB_PORT=5432 / 3306
 - DB_DATABASE=kanban
