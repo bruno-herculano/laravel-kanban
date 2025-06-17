@@ -34,16 +34,16 @@ Um sistema completo de quadro Kanban estilo Trello, desenvolvido com Laravel, Bo
 ### Instalação
 
 1. Clone o repositório:
-git clone https://github.com/bruno-herculano/laravel-kanban.git
-cd laravel-kanban
+- git clone https://github.com/bruno-herculano/laravel-kanban.git
+- cd laravel-kanban
 
 2. Instale as dependências
-composer install
-npm install
+- composer install
+- npm install
 
 3. Configure o ambiente
-cp .env.example .env
-php artisan key:generate
+- cp .env.example .env
+- php artisan key:generate
 
 4. Configure o banco de dados no .env
 - DB_CONNECTION=pgsql
@@ -54,13 +54,14 @@ php artisan key:generate
 - DB_PASSWORD=
 
 5. Execute as migrações e os seeder`s
-php artisan migrate --seed
+- php artisan migrate --seed
 
 6. Compile os assets
-npm run build && npm run dev
+- npm run build
+- npm run dev
 
-7. inicie o servidor
-php artisan serve
+8. inicie o servidor
+- php artisan serve
 
 ## 🌟 Dados de Teste
 
