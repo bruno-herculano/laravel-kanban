@@ -74,5 +74,5 @@ Um sistema completo de quadro Kanban estilo Trello, desenvolvido com Laravel, Bo
 ### Bruno Alexandre Herculano
 
 - Portfólio: https://bruno-herculano.dev.br
-- LinkedIn: https://www.linkedin.com/in/bruno-herculano
+- LinkedIn: https://www.linkedin.com/in/bruno-alexandre-herculano/
 - GitHub: https://github.com/bruno-herculano
