@@ -57,7 +57,7 @@ DB_PASSWORD=
 php artisan migrate --seed
 
 6. Compile os assets
-npm run build
+npm run build && npm run dev
 
 7. inicie o servidor
 php artisan serve
