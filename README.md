@@ -46,12 +46,12 @@ cp .env.example .env
 php artisan key:generate
 
 4. Configure o banco de dados no .env
-DB_CONNECTION=pgsql
-DB_HOST=127.0.0.1
-DB_PORT=5432 / 3306
-DB_DATABASE=kanban
-DB_USERNAME=postgres / mysql
-DB_PASSWORD=
+- DB_CONNECTION=pgsql
+- DB_HOST=127.0.0.1
+- DB_PORT=5432 / 3306
+- DB_DATABASE=kanban
+- DB_USERNAME=postgres / mysql
+- DB_PASSWORD=
 
 5. Execute as migrações e os seeder`s
 php artisan migrate --seed
