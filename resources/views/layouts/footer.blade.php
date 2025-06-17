@@ -25,7 +25,7 @@
                     <a href="https://github.com/bruno-herculano" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/bruno-herculano/" target="_blank" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/bruno-alexandre-herculano/" target="_blank" title="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
